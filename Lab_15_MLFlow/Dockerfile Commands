@@ -1,0 +1,5 @@
+#command to build docker image
+docker build -t mlflow:server .
+
+#command to run docker image
+docker run -d -p 5000:5000 --name mlflow-server mlflow:custom
